@@ -33,10 +33,11 @@ class ProductRequest extends FormRequest
             'slug' => ['required', 'string', 'max:255', 'unique:products,slug,' . $this->route('product')],
             'price' => ['required', 'numeric'],
             'discount' => ['required', 'numeric'],
-            'thumbnail' => [ $thumbnailRequired, 'image', 'mimes:jpg,jpeg,png,gif', 'max:2048'],
+            'thumbnail' => [ $thumbnailRequired, 'image', 'mimes:jpg,jpeg,png,gif,webp', 'max:2048'],
             'status' => ['required', 'string', 'in:publish,unpublish'],
             'images' => ['nullable', 'array', 'max:5'],
-            'images.*' => ['image', 'mimes:jpg,jpeg,png,gif', 'max:2048'],
+            'images.*' => ['image', 'mimes:jpg,jpeg,png,gif,webp', 'max:2048'],
+            'images_to_delete' => ['nullable'],
         ];
     }
 

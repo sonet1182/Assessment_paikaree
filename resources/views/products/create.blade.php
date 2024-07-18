@@ -2,22 +2,22 @@
 <form action="{{ route('products.store') }}" method="POST" enctype="multipart/form-data" class="ajax-form">
     @csrf
     <div class="mb-4">
-        <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Name</label>
+        <label for="name" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Name <span class="text-red-500">*</span></label>
         <input type="text" id="name" name="name"
             class="mt-1 block w-full border-gray-300 dark:border-gray-700 dark:bg-gray-800 rounded-md shadow-sm">
     </div>
     <div class="mb-4">
-        <label for="price" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Price</label>
+        <label for="price" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Price <span class="text-red-500">*</span></label>
         <input type="number" id="price" name="price"
             class="mt-1 block w-full border-gray-300 dark:border-gray-700 dark:bg-gray-800 rounded-md shadow-sm">
     </div>
     <div class="mb-4">
-        <label for="discount" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Discount</label>
+        <label for="discount" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Discount (In %) <span class="text-red-500">*</span></label>
         <input type="number" id="discount" name="discount"
             class="mt-1 block w-full border-gray-300 dark:border-gray-700 dark:bg-gray-800 rounded-md shadow-sm">
     </div>
     <div class="mb-4">
-        <label for="image" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Image</label>
+        <label for="image" class="block text-sm font-medium text-gray-700 dark:text-gray-300">Thumbnail <span class="text-red-500">*</span></label>
         <input type="file" id="image" name="thumbnail"
             class="mt-1 block w-full border-gray-300 dark:border-gray-700 dark:bg-gray-800 rounded-md shadow-sm">
         <div id="image-preview" class="mt-2"></div>

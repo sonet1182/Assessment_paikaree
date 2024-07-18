@@ -11,6 +11,15 @@
                 <div class="p-6 text-gray-900 dark:text-gray-100">
                     {{ __("You're logged in!") }}
                 </div>
+
+                <div class="p-6">
+
+                    <a class="text-blue-500" href="{{ route('products.index') }}">Click Here to Show Product List</a>
+
+                </div>
+
+                
+
             </div>
         </div>
     </div>
