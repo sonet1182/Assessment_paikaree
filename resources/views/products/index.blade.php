@@ -95,24 +95,22 @@
                         editRoute = editRoute.replace(':id', product.id);
                         let deleteRoute = "{{ route('products.destroy', ':id') }}";
                         deleteRoute = deleteRoute.replace(':id', product.id);
-                        let showRoute = "{{ route('products.show', ':id') }}";
-                        showRoute = showRoute.replace(':id', product.id);
                         html += `
                                 <tr class="text-center">
-                                    <td class="px-4 py-2 border-b dark:border-gray-700">${index +1 }</td>
-                                    <td class="px-4 py-2 border-b dark:border-gray-700">
-                                        <img src="${product.thumbnail}" alt="${product.name}" class="h-10 w-10 object-cover rounded-full">
-                                    </td>
-                                    <td class="px-4 py-2 border-b dark:border-gray-700">${product.name}</td>
-                                    <td class="px-4 py-2 border-b dark:border-gray-700">${product.price}</td>
-                                    <td class="px-4 py-2 border-b dark:border-gray-700">${product.discount}%</td>
-                                    <td class="px-4 py-2 border-b dark:border-gray-700">${product.status}</td>
-                                    <td class="px-4 py-2 border-b dark:border-gray-700 flex space-x-1">
-                                        <a class="open-modal px-4 py-1 bg-green-500 text-white rounded " href="${showRoute}">Show</a>
-                                        <a class="open-modal px-4 py-1 bg-green-500 text-white rounded ajax-click-page" href="${editRoute}">Edit</a>
-                                        <a class="px-4 py-1 bg-red-500 text-white rounded ajax-delete" href="${deleteRoute}">Delete</a>
-                                    </td>
-                                </tr>
+    <td class="px-4 py-2 border-b dark:border-gray-700">${index + 1}</td>
+    <td class="px-4 py-2 border-b dark:border-gray-700 flex justify-center">
+        <img src="${product.thumbnail}" alt="${product.name}" class="h-10 w-10 object-cover rounded-full">
+    </td>
+    <td class="px-4 py-2 border-b dark:border-gray-700">${product.name}</td>
+    <td class="px-4 py-2 border-b dark:border-gray-700">${product.price}</td>
+    <td class="px-4 py-2 border-b dark:border-gray-700">${product.discount}%</td>
+    <td class="px-4 py-2 border-b dark:border-gray-700">${product.status}</td>
+    <td class="px-4 py-2 border-b dark:border-gray-700 flex justify-center space-x-1">
+        <a class="open-modal px-4 py-1 bg-green-500 text-white rounded ajax-click-page" href="${editRoute}">Edit</a>
+        <a class="px-4 py-1 bg-red-500 text-white rounded ajax-delete" href="${deleteRoute}">Delete</a>
+    </td>
+</tr>
+
                             `;
                     });
                     $('tbody').html(html);
