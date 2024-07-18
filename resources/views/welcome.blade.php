@@ -92,13 +92,16 @@
                                         <div class="pt-3 sm:pt-5 lg:pt-0">
                                             <h2 class="text-xl font-semibold text-black dark:text-white">Documentation</h2>
 
-                                            <p class="mt-4 text-sm/relaxed">
-                                                Laravel has wonderful documentation covering every aspect of the framework. Whether you are a newcomer or have prior experience with Laravel, we recommend reading our documentation from beginning to end.
-                                            </p>
+                                            <div class="mt-4">
+                                                This project is done by,
+                                                <h5>Md. Shawn Shikder Sonet (01732379393)</h5>
+                                                As an assessment of coding skill for the post of 
+                                                <h6>Sr. Executive - PHP Laravel Developer </h6>
+                                            </div>
                                         </div>
                                     </div>
 
-                                    <svg class="size-6 shrink-0 stroke-[#FF2D20]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75"/></svg>
+                                    
                                 </div>
                             </a>
 
